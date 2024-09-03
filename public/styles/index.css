@@ -1,0 +1,108 @@
+body
+.input-field{
+    border: none;
+    appearance: none;
+    background-color: #f2f2f2;
+    padding: 0.75rem;
+    border: 0.188rem;
+    width: 15.625rem;
+    outline: none;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.input-field::placeholder{
+    color: #222;
+    transition: color 0.3s ease;
+}
+ul{list-style-type: none;}
+.submit-btn{
+    border: none;
+    appearance: none;
+    background-color: #3399CC;
+    padding: 0.75rem;
+    border: 0.188rem;
+    padding: 0.75rem;
+    width: 17.1rem;
+    outline: none;
+    margin-left: 2rem;
+    margin-top: 3rem;
+
+    
+
+}
+.submit-btn:hover{
+    background-color: #d8d8d8;
+}
+.container{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 50rem;
+    width: 35rem;
+    box-shadow: 0 0.5rem 0.75rem 0 rgba(0,0,0,0.24),0 0.8rem 2.125rem 0 rgba(0,0,0,0.19);   
+}
+.card{
+    background-color: #DDE6ED;
+    display: inline-block;
+    height: 25rem;
+    width: 15rem;
+    margin: 3rem 1.5rem;
+    box-shadow: 0 0.5rem 0.75rem 0 rgba(0,0,0,0.24),0 0.8rem 2.125rem 0 rgba(0,0,0,0.19);  
+    padding: 1rem;
+
+}
+.grid-container{display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 7rem 12rem 5rem
+
+
+}
+.grid-container >p{
+    grid-area: 2/1/2/3;
+    line-height: 2;
+    word-wrap: break-word;
+    color: #000000;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+}
+.btn-container{
+    grid-area: 3/2/4/3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.btn-container input[type= submit]{
+    display: inline-block;
+    background-color: #DDE6ED ;
+    opacity: 70%;
+
+    border: none;
+    color: #9DB2BF;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    
+
+}
+.btn-container input[type= submit]:hover{
+    box-shadow: 0 0.12rem 0.25rem 0 rgba(0,0,0,0.24),0 0.363rem 0.725rem 0 rgba(0,0,0,0.19);
+    opacity: 200%;
+}
+.title >h1{
+    grid-area: 1/1/2/2;
+    color: #27374D;
+ font-family: "Bakbak One", sans-serif;
+ margin: 0;
+}
+.author > h3{
+    grid-area: 3/1/4/2;
+    opacity: 70%;
+    color: #526D82;
+    margin: 0.5rem;
+    font-family: "Nerko One", cursive;
+
+
+}
+

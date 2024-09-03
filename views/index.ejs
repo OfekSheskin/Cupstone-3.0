@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupstone 3.0 home page</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nerko+One&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+
+
+
+        
+
+
+
+    <%for(i=0;i< postArray.length;i++){ %>
+        <div class="card">
+            <div class="grid-container">
+            <div class="title">
+            <h1><%= postArray[i].title %></h1></div>
+            <p ><%= postArray[i].text %></p>
+            <div class="author">
+            <h3><%=  postArray[i].author %></h3></div>
+            <div class="btn-container">
+            <form action="/edit" method="POST">
+                <input type="hidden" name="postid" value=<%= i %>>
+                <input type="submit" value="edit">
+            </form>
+            <form action="/delete" method="post">
+                <input type="hidden" name="postid" value=<%= i %>>
+                <input type="submit" value="delete">
+            </form></div>
+        </div>
+    
+        </div>
+        <%  }%>
+        <%- include("partials/footer.ejs") %>
+
+
+
+
+    
+    
+    
+</body>
+</html>

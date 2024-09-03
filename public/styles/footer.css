@@ -1,0 +1,31 @@
+.footer-container{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    background-color: #9DB2BF;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.btn2{   background-color: #9DB2BF;
+    opacity: 70%;
+    display: block;
+
+    border: none;
+    color: #27374D;
+    padding: 0.938rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  p{margin: 0; opacity: 70%;
+color: #111821;}
+

@@ -1,0 +1,85 @@
+@media (min-width:1000px){
+  body{margin: 0;}
+  .header-container-mobile{
+    display: none;
+  }
+.header-container{
+    display: flex;
+    background-color: #9DB2BF;
+    height:4.5rem;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#logo{height:3rem; width: 3rem; margin-left: 0.8rem; color:"#27374D"}
+#headname{display: inline; position: absolute; top: 0.8rem; margin-left: 0.8rem; margin-top: 0rem; color: #27374D; font-family: "Bakbak One", sans-serif;}
+.form{display: inline-block;}
+.btn{  background-color: #9DB2BF ;
+    opacity: 70%;
+
+    border: none;
+    color: #27374D;
+    padding: 0.938rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  .btn:hover{
+    box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.24),0 1.063rem 3.125rem 0 rgba(0,0,0,0.19);
+    opacity: 200%;
+  }
+
+
+
+.buttons{display: inline-block;}
+}
+@media(max-width:999px){
+  html{
+    font-size: 10px;
+  }
+  body{margin: 0;}
+  .header-container{display: none;}
+  .header-container-mobile{
+      display: flex;
+      background-color: #9DB2BF;
+      height:4.5rem;
+      align-items: center;
+      justify-content: space-between;
+      
+  }
+  #logo{ height:3rem; width: 3rem; margin-left: 0.8rem; color:"#27374D"}
+  #headname{display: inline; position: absolute; top: 0.8rem; margin-left: 0.8rem; margin-top: 0rem; color: #27374D; font-family: "Bakbak One", sans-serif;}
+  .btn-mobile{  background-color: #9DB2BF ;
+    opacity: 70%;
+
+    border: none;
+    color: #27374D;
+    padding: 0.938rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.25rem 0.125rem;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+
+.content-mobile{display: none;
+position: absolute;}
+
+
+.drop-menu-mobile{
+  margin-right: 1rem;
+  height: 3rem;
+}
+
+.buttons-mobile:hover, .buttons-mobile:active .content-mobile{
+  display: block;}
+}

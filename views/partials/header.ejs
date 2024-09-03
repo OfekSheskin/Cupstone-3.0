@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/header.css">
+    <title>Header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bakbak+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header-container">
+        <div class="logo">
+        <img id="logo" src="/images/logo.svg" style="color: #27374D;">
+        <h1 id="headname">Blogy</h1></div>
+        <div class="buttons">
+                <% if(locals.name && name!== ""){ %>
+                    <form class="form" action="/profile" method="get">
+                        <input class="btn" type="submit" value="profile">
+                    </form>
+            
+                    <% } %>
+                 <% if(!locals.name || name===""){ %>
+                    <form class="form" action="/login" method="get">
+                        <input class="btn" type="submit" value="login">
+                    </form>
+                
+                     <% } %>
+                     <form class="form" action="/createpost" method="get">
+                        <input class="btn"  type="submit" value="new post">
+                     </form>
+                     <form class="form" action="/" method="get">
+                        <input class="btn"  type="submit" value="home">
+                     </form>
+
+                
+
+             </div>
+
+
+   </div>
+   <div class="header-container-mobile">
+    <div class="logo-mobile">
+    <h1 id="headname-mobile">Blogy</h1></div>
+    <div class="buttons-mobile">
+       <img class="drop-menu-mobile" src="/images/list.svg" alt="drop-menu">
+
+        <div class="content-mobile">
+            <% if(locals.name && name!== ""){ %>
+                <form class="form-mobile" action="/profile" method="get">
+                    <input class="btn-mobile" type="submit" value="profile">
+                </form>
+        
+                <% } %>
+             <% if(!locals.name || name===""){ %>
+                <form class="form-mobile" action="/login" method="get">
+                    <input class="btn-mobile" type="submit" value="login">
+                </form>
+            
+                 <% } %>
+                 <form class="form-mobile" action="/createpost" method="get">
+                    <input class="btn-mobile"  type="submit" value="new post">
+                 </form>
+                 <form class="form-mobile" action="/" method="get">
+                    <input class="btn-mobile"  type="submit" value="home">
+                 </form></div>
+
+                 
+
+         </div>
+
+
+</div>
+    
+</body>
+</html>
