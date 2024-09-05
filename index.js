@@ -3,7 +3,7 @@ import { name } from "ejs";
 import express, { response } from "express";
 const app = express();
 const port = 3000;
-const postArray = [{title: "good information", author: "cool name", text: "Your brain is more active during sleep, especially in REM sleep, than when you're awake. That's when it processes memories and solves problems—so sleeping on it really works!"},{title: "bad info", author: "bad name", text: "We touch our faces 16-23 times an hour, increasing the risk of spreading germs and getting sick."}];
+const postArray = [{title: "good info", author: "cool name", text: "Your brain is more active during sleep, especially in REM sleep, than when you're awake."},{title: "bad info", author: "bad name", text: "We touch our faces 16-23 times an hour, increasing the risk of spreading germs and getting sick."}];
 const profile = [];
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
